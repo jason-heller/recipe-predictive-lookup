@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #60993a;
+}
+
+header {
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.container {
+  max-width: 800px;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  min-height: 100px;
+}
+
+.footer {
+  position: fixed;
+  left: 30px;
+  bottom: 0px;
+  text-align: left;
+}
+
+.predictions {  
+  display: block;
+}
+
+.search-bar {
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 12px 24px 12px 46px;
+
+    width: 50%;
+
+    background-image: url('./images/search.png');
+    background-position: 12px 11px;
+    background-repeat: no-repeat;
+}
+
+.prediction {  
+  background: rgb(180, 209, 125);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px 30px;
+}
+
+.prediction h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-indent: 10px;
+  
+  cursor: pointer;
+}
+
+.prediction h3:hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-indent: 10px;
+  
+  cursor: pointer;
+  color: #108540;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.search {
+  text-align: center;
+  align-items: center;
+}
+
+.recipe-enter, .recipe-appear {
+  color: transparent;
+  line-height: 0;
+}
+
+.recipe-exit, .recipe-exit-active {
+  color: transparent;
+  transition: all 500ms;
+}
+
+.recipe-enter-active, .recipe-appear-active {
+  color: black;
+  transition: all 500ms;
+  line-height: 1.5;
+}
+
+.spinner {
+  animation: spin infinite 1s linear;
+  scale: 2;
+}
+
+@keyframes spin {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+
+input {
+  margin-bottom:50px;
+}
+
+label {
+  display: block;
+  color: #000;
+}
+
+ul {
+  text-align: left;
+}
